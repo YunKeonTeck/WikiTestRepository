@@ -1,6 +1,9 @@
 name: Enforce Rebasing
 
-on: [push]
+on: 
+  pull_request:
+    types:
+      - synchronize
 
 jobs:
   rebase_job:
