@@ -4,6 +4,8 @@ on:
   pull_request:
     types:
       - synchronize
+      - open
+      - reopened
 
 jobs:
   rebase_job:
